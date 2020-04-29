@@ -1,0 +1,43 @@
+﻿<Window x:Class="WildCircus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WildCircus"
+        mc:Ignorable="d"
+        Icon="/View/Images/Tools/Icon.png"
+        Title="MainWindow" ResizeMode="CanResize" MinHeight="800"
+        x:Name="MainWindowElement"
+        >
+    <Grid x:Name="MainGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="/View/Images/Tools/Background.jpg" Stretch="Fill"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" MaxHeight="100"/>
+            <RowDefinition Height="*" MaxHeight="200"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="MenuTop" Grid.Row="0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="Logout_Button" Click="Logout_Button_Click" Content="Logout" Margin="5" Visibility="Collapsed" Cursor="Hand"/>
+                <Button x:Name="Login_Button" Click="Login_Button_Click" Margin="5" Cursor="Hand">
+                    <Image x:Name="ImageLogin" Source="/View/Images/Tools/LogIn.png" Cursor="Hand"/>
+                </Button>
+                <Button x:Name="CreateUser_Button" Click="CreateUser_Button_Click" Margin="5">
+                    <Image x:Name="ImageCreate" Source="/View/Images/Tools/CreateYourAccount.png" Cursor="Hand"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="ArtistPresentation" Grid.Row="1">
+            <local:ArtistPresentation></local:ArtistPresentation>
+        </Grid>
+        <Grid x:Name="Shop" Grid.Row="2" VerticalAlignment="Top" Margin="20" Height="500" Width="1000">
+            <Grid.Background>
+                <SolidColorBrush Color="AliceBlue" Opacity="0.5"/>
+            </Grid.Background>
+            <local:ShowList></local:ShowList>
+        </Grid>
+
+    </Grid>
+</Window>

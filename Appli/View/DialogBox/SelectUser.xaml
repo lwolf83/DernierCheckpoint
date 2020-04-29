@@ -1,0 +1,21 @@
+﻿<Window x:Class="WildCircus.SelectUser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WildCircus"
+      ContentRendered="Window_ContentRendered"
+      ResizeMode="NoResize"
+      mc:Ignorable="d" 
+      Height="240" Width="200"
+      Title="SelectUser">
+    <Grid>
+        <StackPanel>
+            <Label Content="You need to be register to continue :"/>
+            <Label Content="What do you want to do?"/>
+            <Button x:Name="LogInButton" Content="Log In" Click="LogInButton_Click"/>
+            <Label Content="or"/>
+            <Button x:Name="CreateAccountButton" Content="Create a New account" Click="CreateAccountButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

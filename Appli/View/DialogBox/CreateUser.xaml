@@ -1,0 +1,34 @@
+﻿<Window x:Class="WildCircus.CreateUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WildCircus"
+        ContentRendered="Window_ContentRendered"
+        ResizeMode="NoResize"
+        ShowInTaskbar ="False"
+        WindowStyle="None"
+        mc:Ignorable="d"
+        Title="Create your account" Height="400" Width="400">
+  
+
+        <Grid>
+            <Grid.Background>
+             <ImageBrush ImageSource="/View/Images/Tools/LoginBack.png" Stretch="Fill"/>
+            </Grid.Background>
+            <StackPanel Orientation="Vertical"  VerticalAlignment="Top" Width="200" Margin="0,150,0,0">
+                <Label Content="Login"/>
+                <TextBox x:Name="Login_TextBox"/>
+                <Label Content="Password"/>
+                <PasswordBox x:Name="Password_TextBox"/>
+                <Label Content="Email" />
+                <TextBox x:Name="Email_TextBox"/>
+                <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Center">
+                    <Button x:Name="CancelForm" Content="Cancel" Margin="0,0,10,0" Click="CancelForm_Click"></Button>
+                    <Button x:Name="ValidForm" Content="Create" Margin="10,0,0,0" Click="ValidForm_Click"></Button>
+                </StackPanel>
+                <Label x:Name="ErrorLabel" Foreground="Red"/>
+            </StackPanel>
+        </Grid>
+    
+</Window>

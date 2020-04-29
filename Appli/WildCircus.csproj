@@ -1,0 +1,122 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>WildCircus</AssemblyName>
+    <RootNamespace>WildCircus</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\Images\Charme.jpg" />
+    <None Remove="View\Images\Clown.jpg" />
+    <None Remove="View\Images\Doctor-Strange.jpg" />
+    <None Remove="View\Images\Expandable.jpg" />
+    <None Remove="View\Images\Gimli.jpg" />
+    <None Remove="View\Images\Godzilla.jpg" />
+    <None Remove="View\Images\Licorne.jpg" />
+    <None Remove="View\Images\marcheur-blanc.jpg" />
+    <None Remove="View\Images\Small\Charme.jpg" />
+    <None Remove="View\Images\Small\Clown.jpg" />
+    <None Remove="View\Images\Small\Doctor-Strange.jpg" />
+    <None Remove="View\Images\Small\Expandable.jpg" />
+    <None Remove="View\Images\Small\Gimli.jpg" />
+    <None Remove="View\Images\Small\Godzilla.jpg" />
+    <None Remove="View\Images\Small\Licorne.jpg" />
+    <None Remove="View\Images\Small\marcheur-blanc.jpg" />
+    <None Remove="View\Images\Small\Witcher.jpg" />
+    <None Remove="View\Images\Tools\Background.jpg" />
+    <None Remove="View\Images\Tools\Buy.jpg" />
+    <None Remove="View\Images\Tools\BuyNow.png" />
+    <None Remove="View\Images\Tools\Congratulation.png" />
+    <None Remove="View\Images\Tools\CreateYourAccount.png" />
+    <None Remove="View\Images\Tools\Icon.png" />
+    <None Remove="View\Images\Tools\LeftArrow.png" />
+    <None Remove="View\Images\Tools\Loading.gif" />
+    <None Remove="View\Images\Tools\LogIn.png" />
+    <None Remove="View\Images\Tools\LoginBack.png" />
+    <None Remove="View\Images\Tools\RightArrow.png" />
+    <None Remove="View\Images\Tools\SplashScreen.gif" />
+    <None Remove="View\Images\Tools\SplashScreen.jpg" />
+    <None Remove="View\Images\Witcher.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="1.2.3" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\Images\Small\Charme.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Small\Clown.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Small\Doctor-Strange.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Small\Expandable.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Small\Gimli.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Small\Godzilla.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Small\Licorne.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Small\marcheur-blanc.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Small\Witcher.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Tools\Background.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Tools\Buy.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Tools\BuyNow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Tools\Congratulation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Tools\CreateYourAccount.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Tools\Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Tools\LeftArrow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Tools\LogIn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Tools\LoginBack.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Tools\RightArrow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="View\Images\Tools\SplashScreen.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </SplashScreen>
+  </ItemGroup>
+
+</Project>
