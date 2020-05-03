@@ -33,7 +33,9 @@
                                  Height="150"
                                  materialDesign:ColorZoneAssist.Background="Black"
                                  materialDesign:ColorZoneAssist.Foreground="White">
-                        <Image Source="{Binding PicturesURISmall}"/>
+                        <Button x:Name="DetailArtist" Click="DetailArtist_Click" CommandParameter="{Binding Path=.}">
+                            <Image Source="{Binding PicturesURISmall}" Cursor="Hand"/>
+                        </Button>
                     </GroupBox>
 
                 </DataTemplate>

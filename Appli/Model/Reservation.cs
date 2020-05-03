@@ -7,7 +7,6 @@ namespace WildCircus
     public partial class Reservation
     {
         public Guid ReservationId { get; set; }
-        public Guid PerformanceId { get; set; }
         public Performance Performance { get; set; }
         public User User { get; set; }
         public string State { get; set; }

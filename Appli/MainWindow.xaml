@@ -19,7 +19,11 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid x:Name="MenuTop" Grid.Row="0">
+            <Button x:Name="HomeButton" Click="HomeButton_Click" HorizontalAlignment="Left" Cursor="Hand" Margin="5">
+                <Image Source="/View/Images/Tools/home.jpg"/>
+            </Button>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="Order_Button" Click="Order_Button_Click" Content="Your commands" Margin="5" Visibility="Collapsed" Cursor="Hand"/>
                 <Button x:Name="Logout_Button" Click="Logout_Button_Click" Content="Logout" Margin="5" Visibility="Collapsed" Cursor="Hand"/>
                 <Button x:Name="Login_Button" Click="Login_Button_Click" Margin="5" Cursor="Hand">
                     <Image x:Name="ImageLogin" Source="/View/Images/Tools/LogIn.png" Cursor="Hand"/>

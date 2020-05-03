@@ -7,6 +7,19 @@ namespace WildCircus
 {
     public partial class Reservation
     {
+        public int GetVip
+        {
+            get { return GetSeats("Vip"); }
+        }
+        public int GetNormal
+        {
+            get { return GetSeats("Normal"); }
+        }
+        public int GetEco
+        {
+            get { return GetSeats("Eco"); }
+        }
+
         public void Save()
         {
             var context = new WildCircusContext();
@@ -16,6 +29,7 @@ namespace WildCircus
 
         public int GetSeats(string cat)
         {
+            cat = cat.ToUpper();
             int nbSeats = Seats.Where(s => s.Category.Name == cat).Count();
             return nbSeats;
         }

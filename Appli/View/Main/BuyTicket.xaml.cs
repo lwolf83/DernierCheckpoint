@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using WildCircus.View.Main;
 
 namespace WildCircus
 {
@@ -36,11 +35,11 @@ namespace WildCircus
                 SelectUser.RegisterUser();
             }
 
-            if(UserSingleton.GetInstance.IsAuthenticated)
+            if(UserSingleton.GetInstance.IsAuthenticated && CheckQuantity())
             {
-                List<Seat> seatsVIP = CreateSeats("VIP", VipQuantity.GetQuantity());
-                List<Seat> seatsNormal = CreateSeats("Normal", NormalQuantity.GetQuantity());
-                List<Seat> seatsECO = CreateSeats("Eco", EcoQuantity.GetQuantity());
+                List<Seat> seatsVIP = SeatsFactory.CreateSeats("VIP", VipQuantity.GetQuantity());
+                List<Seat> seatsNormal = SeatsFactory.CreateSeats("Normal", NormalQuantity.GetQuantity());
+                List<Seat> seatsECO = SeatsFactory.CreateSeats("Eco", EcoQuantity.GetQuantity());
 
                 List<Seat> seats = seatsVIP;
                 seats.AddRange(seatsNormal);
@@ -48,24 +47,19 @@ namespace WildCircus
 
                 Reservation reservation = ReservationFactory.Create(_performance, seats);
                 reservation.Save();
-                ValidationOrder validationOrder = new ValidationOrder(reservation);
+                
+                ValidationOrder validationOrder = new ValidationOrder();
                 this.Content = validationOrder;
             }
         }
 
-        private List<Seat> CreateSeats(string cat, int quantity)
+        private bool CheckQuantity()
         {
-            Category category = CategoriesLoader.Get(cat);
-            List<Seat> seats = new List<Seat>();
-            for (int i = 0; i < quantity; i++)
-            {
-                Seat seat = new Seat()
-                {
-                    Category = category
-                };
-                seats.Add(seat);
-            }
-            return seats;
+            bool isAtLeastOneSeat = (VipQuantity.GetQuantity() > 0);
+            isAtLeastOneSeat |= (NormalQuantity.GetQuantity() > 0);
+            isAtLeastOneSeat |= (EcoQuantity.GetQuantity() > 0);
+
+            return isAtLeastOneSeat;
         }
 
         private void BackToPerformance_Click(object sender, RoutedEventArgs e)

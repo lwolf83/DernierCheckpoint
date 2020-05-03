@@ -9,6 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="View\Images\Big\Charme.jpg" />
+    <None Remove="View\Images\Big\Clown.jpg" />
+    <None Remove="View\Images\Big\Doctor-Strange.jpg" />
+    <None Remove="View\Images\Big\Expandable.jpg" />
+    <None Remove="View\Images\Big\Gimli.jpg" />
+    <None Remove="View\Images\Big\Godzilla.jpg" />
+    <None Remove="View\Images\Big\Licorne.jpg" />
+    <None Remove="View\Images\Big\Marcheur-blanc.jpg" />
+    <None Remove="View\Images\Big\Show1.jpg" />
+    <None Remove="View\Images\Big\Show2.jpg" />
+    <None Remove="View\Images\Big\Witcher.jpg" />
     <None Remove="View\Images\Charme.jpg" />
     <None Remove="View\Images\Clown.jpg" />
     <None Remove="View\Images\Doctor-Strange.jpg" />
@@ -26,11 +37,13 @@
     <None Remove="View\Images\Small\Licorne.jpg" />
     <None Remove="View\Images\Small\marcheur-blanc.jpg" />
     <None Remove="View\Images\Small\Witcher.jpg" />
+    <None Remove="View\Images\Tools\BackGround-artist.jpg" />
     <None Remove="View\Images\Tools\Background.jpg" />
     <None Remove="View\Images\Tools\Buy.jpg" />
     <None Remove="View\Images\Tools\BuyNow.png" />
     <None Remove="View\Images\Tools\Congratulation.png" />
     <None Remove="View\Images\Tools\CreateYourAccount.png" />
+    <None Remove="View\Images\Tools\Home.jpg" />
     <None Remove="View\Images\Tools\Icon.png" />
     <None Remove="View\Images\Tools\LeftArrow.png" />
     <None Remove="View\Images\Tools\Loading.gif" />
@@ -54,6 +67,39 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="View\Images\Big\Charme.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Big\Clown.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Big\Doctor-Strange.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Big\Expandable.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Big\Gimli.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Big\Godzilla.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Big\Licorne.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Big\Marcheur-blanc.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Big\Show1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Big\Show2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Big\Witcher.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="View\Images\Small\Charme.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -81,6 +127,9 @@
     <Resource Include="View\Images\Small\Witcher.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="View\Images\Tools\BackGround-artist.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="View\Images\Tools\Background.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -94,6 +143,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="View\Images\Tools\CreateYourAccount.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Tools\Home.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="View\Images\Tools\Icon.png">

@@ -68,6 +68,11 @@ namespace WildCircus
             DisplayArtist();
         }
 
-
+        private void DetailArtist_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            Artist newArtist = button.CommandParameter as Artist;
+            DetailArtiste.DisplayArtist(newArtist);
+        }
     }
 }
